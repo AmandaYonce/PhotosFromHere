@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos From Here</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top navbar">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 48.858093, longitude: 2.294694})" class="nav-link">Paris</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 41.89193, longitude: 12.51133})" class="nav-link">Rome</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 40.416775, longitude: -3.703790})" class="nav-link">Madrid</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 22.302711, longitude: 114.174637})" class="nav-link">Hong Kong</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: -40.7833, longitude: -73.2333})" class="nav-link">Patagonia</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 51.233334, longitude: 6.783333})" class="nav-link">Dusseldorf</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 51.509865, longitude: -0.118092})" class="nav-link">London</a></li>
+                <li class="nav-item navbar-text"><a href="#" onclick="displayPhoto({latitude: 19.432608, longitude: -99.133209})" class="nav-link">Mexico City</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="row">
+        <div class="col-sm">
+            <h1>Photos From Here</h1>
+            <h2>Please allow location access to view photos near your location</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="justify-content-center">
+            <button id="nextButton" onclick="sendImageToHTML(imageUrlArray)"></button>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+            <div  id="photoBox">
+                <img class="align-self-center" id="photoImage" src="camera.png">
+            </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <a id="urlAnchor" href=# >Photo Url</a>
+    </div>
+    
+
+    
+    <footer>Amanda Yonce <br>
+            Kenzie Academy<br>
+            SE Oct 2019
+    </footer>
+
+</div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
